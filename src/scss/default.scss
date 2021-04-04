@@ -1,0 +1,68 @@
+
+.swiper-pagination {
+    padding-bottom: 15px;
+    &-bullet {
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+}
+
+._icon-box:before {
+  padding-right: 10px;
+}
+._icon-heart {
+  color: #fff;
+  @media (min-width:$md3+px){
+    &:hover {
+      color: #9fbf30;
+    }
+  }
+}
+
+.noUi-connect {
+  background: #9fbf30;
+}
+
+.noUi-target {
+  background: #b4b4b4;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  height: 2px;
+}
+
+.noUi-handle {
+  box-shadow: none;
+  border-radius: 50%;
+  background: #9fbf30;
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+.noUi-horizontal .noUi-handle {
+  width: 15px;
+  height: 15px;
+  left: 20px;
+  cursor: pointer;
+}
+@media (max-width:$md1+px){
+  .sidebar-arrow {
+    position: absolute;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    top: 25px;
+    right: 20px;
+    transform: rotate(-135deg);
+    cursor: pointer;
+    transition: .5s;
+    z-index: 2;
+  }
+}
+
+
